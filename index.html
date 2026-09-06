@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <!-- Başlık Kısmı -->
+    <header class="app-header">
+      <h1 class="app-header__title">Vücut Kitle İndeksi (VKİ) Hesaplayıcı</h1>
+      <p class="app-header__subtitle">
+        Boy ve kilo değerlerinizi girerek sağlıklı kilo aralığınızı öğrenin
+      </p>
+    </header>
+
+    <!-- Ana İçerik Kısmı -->
+    <main class="main-content">
+      <section class="calculator" aria-labelledby="calc-heading">
+        <h2 id="calc-heading" class="visually-hidden">VKİ Formu</h2>
+        <form id="vki-form" class="calculator__form">
+          <div class="calculator__field">
+            <label for="kilo" class="calculator__label">Kilo (kg):</label>
+            <input
+              type="number"
+              id="kilo"
+              name="kilo"
+              class="calculator__input"
+              min="20"
+              max="300"
+              placeholder="Örn: 75"
+              required
+            />
+          </div>
+
+          <div class="calculator__field">
+            <label for="boy" class="calculator__label">Boy (cm):</label>
+            <input
+              type="number"
+              id="boy"
+              name="boy"
+              class="calculator__input"
+              min="50"
+              max="250"
+              placeholder="Örn: 175"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            id="hesapla-btn"
+            class="calculator__button calculator__button--submit"
+          >
+            Hesapla
+          </button>
+        </form>
+      </section>
+
+      <!-- Block Card -->
+      <section
+        id="sonuc-kutusu"
+        class="result-card result-card--hidden"
+        aria-live="polite"
+      >
+        <h2 class="result-card__title">Hesaplama Sonucunuz</h2>
+        <p class="result-card__text">
+          VKİ Değeriniz:
+          <strong id="vki-degeri" class="result-card__value">0</strong>
+        </p>
+        <p>Durum: <strong id="vki-durumu" class="result-card__status">-></strong></p>
+      </section>
+    </main>
+
+    <!-- Block: info-card -->
+    <aside class="info-card">
+      <h3 class="info-card__title">VKİ Değer Aralıkları</h3>
+      <ul class="info-card__list">
+        <li class="info-card__item">
+          <strong>18, 5 kg/m²'nin altı</strong> Zayıf
+        </li>
+        <li class="info-card__item">
+          <strong>18, 5 kg/m² - 24, 9 kg/m²</strong> Sağlıklı
+        </li>
+        <li class="info-card__item">
+          <strong>25 kg/m² - 29, 9 kg/m²</strong> Şişman
+        </li>
+        <li class="info-card__item">
+          <strong>30 kg/m² - 39, 9 kg/m²</strong> Obez
+        </li>
+        <li class="info-card__item">
+          <strong>40 kg/m²'nin üzeri</strong> Aşırı Obez
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Block: app-footer -->
+    <footer class="app-footer">
+      <p class="app-footer__text">
+        &copy; 2026 VKİ Hesaplama Aracı. Sağlık tavsiyesi yerine geçmez.
+      </p>
+    </footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
