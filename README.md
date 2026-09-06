@@ -1,5 +1,7 @@
 # BMI Calculator
 
+🔗 [Canlı Demo](https://mertgozubuyuk.github.io/bmi-calculator/)
+
 Kullanıcının boy ve kilo bilgilerini girerek vücut kitle 
 indeksini (BMI) hesaplayan basit bir web uygulaması.
 
