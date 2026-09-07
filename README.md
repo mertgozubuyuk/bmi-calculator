@@ -1,6 +1,6 @@
 # BMI Calculator
 
-🔗 [Canlı Demo](https://mertgozubuyuk.github.io/bmi-calculator/)
+🔗 [Live Demo](https://mertgozubuyuk.github.io/bmi-calculator/)
 
 A simple web application that calculates the Body Mass Index (BMI) 
 based on the user's height and weight.
