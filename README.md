@@ -2,17 +2,17 @@
 
 🔗 [Canlı Demo](https://mertgozubuyuk.github.io/bmi-calculator/)
 
-Kullanıcının boy ve kilo bilgilerini girerek vücut kitle 
-indeksini (BMI) hesaplayan basit bir web uygulaması.
+A simple web application that calculates the Body Mass Index (BMI) 
+based on the user's height and weight.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 - HTML
 - CSS
 - JavaScript
 
-## Özellikler
-- Boy ve kilo girişine göre anlık BMI hesaplama
-- Sonuca göre kategori bilgisi (zayıf, normal, kilolu, vb.)
+## Features
+- Instant BMI calculation based on height and weight input
+- Category result based on BMI (wear, healty, fat, obese, etremely obese)
 
-## Nasıl Çalıştırılır
-`index.html` dosyasını tarayıcıda açman yeterli.
+## How to Run
+Simply open `index.html` in your browser.
