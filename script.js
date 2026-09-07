@@ -27,19 +27,19 @@ vkiForm.addEventListener("submit", function (e) {
 
 
   if (vki < 18.5) {
-    durum = "Zayıf";
+    durum = "Weak";
     colorClass = "status--weak";
   } else if (vki >= 18.5 && vki <= 24.9) {
-    durum = "Sağlıklı";
+    durum = "Healty";
     colorClass = "status--healty";
   } else if (vki >= 25 && vki <= 29.9) {
-    durum = "Şişman";
+    durum = "Fat";
     colorClass = "status--fat";
   } else if (vki >= 30 && vki <= 39.9) {
-    durum = "Obez";
+    durum = "Obese";
      colorClass = "status--obese";
   } else {
-    durum = "Aşırı Obez";
+    durum = "Extremely Obese";
     colorClass = "status--extremely-obese";
   }
 
